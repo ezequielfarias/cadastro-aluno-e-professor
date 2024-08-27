@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro </title>
+
+  <link rel="icon" type="" href="../img/cadastro.png.crdownload">
+</head>
+
+
+<body background="../img/fundo_login.png">
+  <style>
+    input {
+      color: red;
+      background-color: blue;
+      text-decoration-color: red;
+    }
+
+    select {
+      color: red;
+      background-color: blue;
+    }
+
+    form {
+      color: black;
+      size: 40;
+    }
+
+    legend {
+      color: red;
+    }
+
+    fieldset {
+      background-color: rgb(red, green, blue);
+    }
+  </style>
+  <link rel="stylesheet" href="./CSS/estilo.css">
+  <fieldset>
+    <legend align="center">
+      <h1>CADASTRE-SE</h1>
+    </legend>
+    <form action="../aluno.php" method="POST">
+      <table align="center" class="box_formulario">
+
+
+        <td>
+          <H2>DADOS DO ALUNO </H2>
+        </td>
+        <tr>
+
+          <td><label for="cadastro_nome"><b>Nome :</b></label></td>
+          <td><input type="text" name="cadastro_nome" size="40" value="Nome completo" />
+
+
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for=" Endereco"><b>Endereço :</b></label></td>
+          <td><input type="text" name="cadastro_Endereco" size=" 40" value="Endereço" /></td>
+        </tr>
+
+
+
+        <tr>
+          <td><label for="cadastro_Cidade"><b>Cidade :</b></label></td>
+          <td>
+            <select name="cadastro_Cidade">
+              <option value=""></option>
+              <option value="Porto Algre">Porto Alegre</option>
+              <option value="Cachoeirinha">Cachoeirinha</option>
+              <option value="Canoas">Canoas</option>
+              <option value="Gravataí "> Gravataí</option>
+              <option value="Viamão">Viamão</option>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Telefone"><b>Telefone/ Celular :</b></label></td>
+          <td><input type="text" name="cadastro_Telefone" size="40" value="(DDD) 9999-9999" /></td>
+        </tr>
+
+        <tr>
+          <td><label for=" mail"><b>E-mail :</b></label></td>
+          <td><input type="text" name="cadastro_mail" size=" 40" value="email@email" /></td>
+        </tr>
+        <tr>
+          <td><label for=" Matricula"><b>Nº Matricula :</b></label></td>
+          <td><input type="text" name="cadastro_Matricula" size=" 40" value="somente número" /></td>
+        </tr>
+        <tr>
+          <td><label for=" RG"><b>Nº RG :</b></label></td>
+          <td><input type="text" name="cadastro_RG" size=" 40" value="somente número" /></td>
+        </tr>
+        <tr>
+          <td><label for=" datamatricula"><b>Data da matricula :</b></label></td>
+          <td><input type="text" name="cadastro_datamatricula" size=" 40" value="Formato de DD/MM/AAAA" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="cadastro_Curso"><b>Curso :</b></label></td>
+          <td>
+            <select name="cadastro_Curso">
+              <option value=""></option>
+              <option value="Técnico em Informática">Técnico em Informática</option>
+              <option value="Técnico em Química">Técnico em Química</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label for="cadastro_Nota1"><b>1ª Nota :</b></label></td>
+          <td>
+            <select name="cadastro_Nota1">
+              <option value=""></option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D "> D</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="cadastro_Nota2"><b>2ª Nota :</b></label></td>
+          <td>
+            <select name="cadastro_Nota2">
+              <option value=""></option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D "> D</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label for="cadastro_Conceitofinal"><b>CONCEITO FINAL :</b></label></td>
+          <td>
+            <select name="cadastro_Conceitofinal">
+              <option value=""></option>
+              <option value="APROVADO">APROVADO</option>
+              <option value="REPROVADO">REPROVADO</option>
+
+            </select>
+          </td>
+        </tr>
+
+
+
+        <br />
+
+  </fieldset>
+  <br>
+  <br>
+  <br>
+  </table>
+  <center>
+    <input type="submit" value="Enviar" class="botao_enviar" />
+    <input type="reset" value="Limpar Dados" class="botao_limpar" />
+  </center>
+  </form>
+  <center>
+    <img src="../img/Mobilization-For-Adaptive-Websites.gif" alt="100" width="500">
+  </center>
+</body>
+<input type="button" value="Voltar" onClick="history.go(-1)" class="botao_voltar">
+
+</html>

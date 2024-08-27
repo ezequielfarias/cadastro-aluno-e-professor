@@ -1,0 +1,22 @@
+color: red;
+background-color: blue;
+text-decoration-color: red;
+}
+
+select {
+  color: red;
+  background-color: blue;
+}
+
+form {
+  color: black;
+  size: 40;
+}
+
+legend {
+  color: red;
+}
+
+fieldset {
+  background-color: rgb(red, green, blue);
+}

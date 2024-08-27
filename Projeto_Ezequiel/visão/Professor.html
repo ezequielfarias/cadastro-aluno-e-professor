@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro </title>
+  <link rel="stylesheet" href="../cadastro.class.php">
+  <link rel="stylesheet" href="../cadastro1.php">
+  <link rel="icon" type="" href="../img/cadastro.png.crdownload">
+</head>
+
+
+<body background="../img/fundo_login.png">
+  <style>
+    input {
+      color: red;
+      background-color: blue;
+      text-decoration-color: red;
+    }
+
+    select {
+      color: red;
+      background-color: blue;
+    }
+
+    form {
+      color: black;
+      size: 40;
+    }
+
+    legend {
+      color: red;
+    }
+
+    fieldset {
+      background-color: rgb(red, green, blue);
+    }
+  </style>
+  <link rel="stylesheet" href="./CSS/estilo.css">
+  <fieldset>
+    <legend align="center">
+      <h1>CADASTRE-SE</h1>
+    </legend>
+    <form action="../professor.php" method="POST">
+      <table align="center" class="box_formulario">
+        <td>
+          <H2>DADOS DO PROFESSOR</H2>
+        </td>
+        <tr>
+
+          <td><label for="cadastro_nomep"><b>Nome :</b></label></td>
+          <td><input type="text" name="cadastro_nomep" size="40" value="Nome completo" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for=" Enderecop"><b>Endereço :</b></label></td>
+          <td><input type="text" name="cadastro_Enderecop" size=" 40" value="Endereço" /></td>
+        </tr>
+
+
+
+        <tr>
+          <td><label for="cadastro_Cidadep"><b>Cidade :</b></label></td>
+          <td>
+            <select name="cadastro_Cidadep">
+              <option value=""></option>
+              <option value="Porto Algre">Porto Alegre</option>
+              <option value="Cachoeirinha">Cachoeirinha</option>
+              <option value="Canoas">Canoas</option>
+              <option value="Gravataí "> Gravataí</option>
+              <option value="Viamão">Viamão</option>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Telefonep"><b>Telefone/ Celular :</b></label></td>
+          <td><input type="text" name="cadastro_Telefonep" size="50" value="(DDD) 9999-9999" /></td>
+        </tr>
+
+        <tr>
+          <td><label for=" mailp"><b>E-mail :</b></label></td>
+          <td><input type="text" name="cadastro_mailp" size=" 40" value="email@email" /></td>
+        </tr>
+        <tr>
+          <td><label for=" matricula1"><b>Nº Matricula :</b></label></td>
+          <td><input type="text" name="cadastro_matricula1" size=" 40" value="somente número" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="cadastro_Titulacao"><b>Titulação :</b></label></td>
+          <td>
+            <select name="cadastro_Titulacao">
+              <option value=""></option>
+              <option value="Graduação">Graduação</option>
+              <option value="Especialização">Especialização</option>
+              <option value="Mestrado">Mestrado</option>
+              <option value="Doutorado "> Doutorado</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="cadastro_cursop"><b>Curso :</b></label></td>
+          <td>
+            <select name="cadastro_cursop">
+              <option value=""></option>
+              <option value="Técnico em Informática">Técnico em Informática</option>
+              <option value="Técnico em Química">Técnico em Química</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for=" CPF"><b>Nº CPF :</b></label></td>
+          <td><input type="text" name="cadastro_CPF" size=" 40" value="Formato de 8 digitos" /></td>
+        </tr>
+      </table>
+
+
+
+
+
+
+      <br />
+      <center>
+        <input type="submit" value="Enviar" class="botao_enviar" />
+        <input type="reset" value="Limpar Dados" class="botao_limpar" />
+      </center>
+    </form>
+  </fieldset>
+  <br>
+  <br>
+  <br>
+  <center>
+    <img src="../img/Mobilization-For-Adaptive-Websites.gif" alt="100" width="500">
+  </center>
+</body>
+<input type="button" value="Voltar" onClick="history.go(-1)" class="botao_voltar">
+
+</html>
